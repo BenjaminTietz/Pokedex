@@ -79,9 +79,9 @@ function closeDetailCardOnbclickOutside(event) {
 // This function renders the detail card
 function renderDetailCard(i) {
     renderDetailCardinside (i);
+    generateIDDetail (i);
     changeBGcolorDetail (i);
     renderPokemonTypesDetailCard (i);
-    generateIDDetail (i);
 }
 
 // This function shows the next detail card
@@ -192,7 +192,6 @@ function searchPokemon () {
             let searchResult = allPokemon[i];
             resultsOfSearch.push(searchResult);
         } 
-        
     }
     renderfilteredPokemon(resultsOfSearch);
 }
@@ -218,7 +217,7 @@ function renderDetailCardinside (i){
     let PokemonStatSpeed = allPokemon[i-1]['stats']['5']['base_stat'];
     
     DetailCard.innerHTML ='';
-    renderDetailCardinside2(i);
+    renderDetailCardinside2(i, pokemonName, pokemonID, pokemonImage, pokemonHeight, pokemonWeight, PokemonStatHP, PokemonStatAttack, PokemonStatDefense, PokemonStatSpecialAttack, PokemonStatSpecialDefense, PokemonStatSpeed );
 }
 
 // This function shows loading circle for 2 seconds

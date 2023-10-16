@@ -49,7 +49,7 @@ function renderfilteredPokemon2() {
 }
 }
 
-function renderDetailCardinside2(i) {
+function renderDetailCardinside2(i, pokemonName, pokemonID, pokemonImage, pokemonHeight, pokemonWeight, PokemonStatHP, PokemonStatAttack, PokemonStatDefense, PokemonStatSpecialAttack, PokemonStatSpecialDefense, PokemonStatSpeed ) {
     DetailCard.innerHTML += ` 
     <div onclick="closeDetailCardOnbclickOutside(event)">
         <div id="contentDetailCardTop" class="contentDetailCardTop">
