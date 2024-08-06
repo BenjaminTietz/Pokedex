@@ -1,552 +1,546 @@
 body {
-    margin: 0;
-    background-color: rgb(98, 85, 85); !important
+  margin: 0;
+  background-color: rgb(98, 85, 85) !important;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .overflow {
-    overflow: hidden;
+  overflow: hidden;
 }
 .bodybgcolour {
-    background-color: rgb(98, 85, 85); 
+  background-color: rgb(98, 85, 85);
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 16px;
-    margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 input {
-    text-align: center;
-    
+  text-align: center;
 }
 .space-between {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 .header_right {
-    display: flex;
+  display: flex;
 }
 .align-center {
-    text-align: center;
-} 
+  text-align: center;
+}
 
 .bgr-grey {
-    background-color: grey;
+  background-color: grey;
 }
 
 .pokemonCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    background-color: lightgray;
-    color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: lightgray;
+  color: black;
 }
-
 
 .pokedex {
-    height: 200px;
-    width: 260px;
-    background-color: grey;
-    border-radius: 20px;
-    border: solid black 2px;
-    margin: 8px 8px;
-    transition: all 0.225s;
+  height: 200px;
+  width: 260px;
+  background-color: grey;
+  border-radius: 20px;
+  border: solid black 2px;
+  margin: 8px 8px;
+  transition: all 0.225s;
 }
 .pokedex img {
-    height: 120px;
-    width: 120px;
-    padding-bottom: 16px;
-
+  height: 120px;
+  width: 120px;
+  padding-bottom: 16px;
 }
 
 .pokedex h1 {
-    font-size: 32px;
-    font-weight: 600;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .pokedex:hover {
-    cursor: pointer;
-    transform: scale(1.10);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
-
 .NameID {
-    font-weight: 600;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin: 20px 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px;
 }
 
 .NameID h1:first-letter {
-        text-transform: uppercase;
+  text-transform: uppercase;
 }
 .SkillImg p:first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .skill p:first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .SkillImg {
-    font-weight: 400;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.SkillImg p{
-    font-weight: 400;
-    background-color: white;
-    width: auto;
-    margin-left: 16px;
-    border-radius: 24px;
-    padding: 4px 12px;
+.SkillImg p {
+  font-weight: 400;
+  background-color: white;
+  width: auto;
+  margin-left: 16px;
+  border-radius: 24px;
+  padding: 4px 12px;
 }
 
 .DetailCardWrapper {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    display: none;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    backdrop-filter: blur(2px);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  right: 0;
+  z-index: 1;
+  backdrop-filter: blur(2px);
 }
 
 .DetailCard {
-    font-size:large;
-    font-weight: 600;
-    color: black;
-    border: solid black 2px;
-    border-radius: 40px;
-    height: 780px;
-    width: 550px;
-    display: none;
-    position: fixed;
+  font-size: large;
+  font-weight: 600;
+  color: black;
+  border: solid black 2px;
+  border-radius: 40px;
+  height: 780px;
+  width: 550px;
+  display: none;
+  position: fixed;
 
-    z-index: 1;
+  z-index: 1;
 }
 
-.contentDetailCardTop{
-    padding-top: 16px;
-    height: 408px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+.contentDetailCardTop {
+  padding-top: 16px;
+  height: 408px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 
-    background-color:  grey;
+  background-color: grey;
 }
-.contentDetailCardTop h1::first-letter{
-    text-transform: uppercase;
+.contentDetailCardTop h1::first-letter {
+  text-transform: uppercase;
 }
-.contentDetailCardBottom{
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    background-color:  white;
-    height: 368px;
+.contentDetailCardBottom {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: white;
+  height: 368px;
 }
 .about {
-    background-color: rgb(98, 85, 85,0.2);
+  background-color: rgb(98, 85, 85, 0.2);
 }
-.stats{
-    background-color: rgb(98, 85, 85,0.2);
+.stats {
+  background-color: rgb(98, 85, 85, 0.2);
 }
 .SkillImgDetail {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-.SkillImgDetail p{
-    background-color: white;
-    width: auto;
-    margin-left: 16px;
-    border-radius: 24px;
-    padding: 4px 12px;
+.SkillImgDetail p {
+  background-color: white;
+  width: auto;
+  margin-left: 16px;
+  border-radius: 24px;
+  padding: 4px 12px;
 }
 .skill {
-    display: flex;
-
+  display: flex;
 }
-.skill p{
-    background-color: white;
-    width: auto;
-    margin-left: 16px;
-    border-radius: 24px;
-    padding: 4px 12px;
+.skill p {
+  background-color: white;
+  width: auto;
+  margin-left: 16px;
+  border-radius: 24px;
+  padding: 4px 12px;
 }
 
-.pokemonDetail{
-    height: 300px;
-    width: 300px;
-
+.pokemonDetail {
+  height: 300px;
+  width: 300px;
 }
 
 .icon {
-    height: 25px;
-    width: 25px;
-    margin: 0px 8px;
+  height: 25px;
+  width: 25px;
+  margin: 0px 8px;
 }
 .icon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .ml4 {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 .ml16 {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 
 .pt16 {
-    padding-top: 16px;
+  padding-top: 16px;
 }
 
 .nav {
-    display: flex;
-
+  display: flex;
 }
-.nav p{
-    width: auto;
-    margin-top: 8px;
-    margin-left: 16px;
-    border-radius: 24px;
-    padding: 4px 12px;
+.nav p {
+  width: auto;
+  margin-top: 8px;
+  margin-left: 16px;
+  border-radius: 24px;
+  padding: 4px 12px;
 }
-.nav p:hover{
-    cursor: pointer;
-    background-color: rgb(98, 85, 85,0.4);
-    width: auto;
-    margin-top: 8px;
-    margin-left: 16px;
-    border-radius: 24px;
-    padding: 4px 12px;
+.nav p:hover {
+  cursor: pointer;
+  background-color: rgb(98, 85, 85, 0.4);
+  width: auto;
+  margin-top: 8px;
+  margin-left: 16px;
+  border-radius: 24px;
+  padding: 4px 12px;
 }
 
 .cardAbout {
-    display: block;
+  display: block;
 }
 
 .abilities {
-    display: flex;
-    flex-direction: row;
-    justify-content:start;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 
 .uppercase:first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .cardStats {
-    margin:8px 16px;
-    display: none;
+  margin: 8px 16px;
+  display: none;
 }
-
 
 .td-primary {
-    width:150px;
+  width: 150px;
 }
 .progress {
-    margin: 8px;
-    width:350px;
-    height: 24px !important;
-    border-radius: 12px !important;
+  margin: 8px;
+  width: 350px;
+  height: 24px !important;
+  border-radius: 12px !important;
 }
 
 .progress-bar {
-    text-align: left !important;
-    padding-left: 12px !important;
-    background-color: rgb(83, 150, 221) !important;
-
+  text-align: left !important;
+  padding-left: 12px !important;
+  background-color: rgb(83, 150, 221) !important;
 }
-
 
 /*diffrent colors for pokedex*/
 
 .grass {
-    background-color:  rgb(124, 252, 0);
+  background-color: rgb(124, 252, 0);
 }
 
 .fire {
-    background-color: rgb(247, 55, 24);
+  background-color: rgb(247, 55, 24);
 }
 
 .poison {
-    background-color: rgb(68, 43, 127);
+  background-color: rgb(68, 43, 127);
 }
 
 .water {
-    background-color: rgb(153, 211, 223);
+  background-color: rgb(153, 211, 223);
 }
 
 .bug {
-    background-color: rgb(116, 195, 101);
+  background-color: rgb(116, 195, 101);
 }
 
 .normal {
-    background-color: rgb(182, 151, 125);
+  background-color: rgb(182, 151, 125);
 }
 
 .fairy {
-    background-color: rgb(149, 122, 176);
+  background-color: rgb(149, 122, 176);
 }
 
 .ground {
-    background-color:  rgb(133, 95, 49);
+  background-color: rgb(133, 95, 49);
 }
 
 .electric {
-    background-color: rgb(251, 77, 19);
+  background-color: rgb(251, 77, 19);
 }
 
 .fighting {
-    background-color: rgb(248, 63, 160);
+  background-color: rgb(248, 63, 160);
 }
 
 .psychic {
-    background-color: rgb(255, 196, 46);
+  background-color: rgb(255, 196, 46);
 }
 
 .rock {
-    background-color: rgb(186, 102, 85);
+  background-color: rgb(186, 102, 85);
 }
-
 
 /*mediaquery*/
 
-@media(max-width:460px) {
-    .DetailCard {
-        height: 620px;
-        width: 300px;
-        font-size:small;
-        font-weight: 400;
-    }
-    .pokemonDetail {
-        height: 150px;
-        width: 150px;
-    }
-    .contentDetailCardTop {
-        height: 288px;
+@media (max-width: 560px) {
+  .DetailCard {
+    height: 620px;
+    width: 300px;
+    font-size: small;
+    font-weight: 400;
+  }
+  .pokemonDetail {
+    height: 150px;
+    width: 150px;
+  }
+  .contentDetailCardTop {
+    height: 288px;
+  }
+  .contentDetailCardBottom {
+    height: 329px;
+  }
 
-    }
-    .contentDetailCardBottom {
-        height: 329px;
-    }
-    
-    .progress {
-        width: 150px;s
-        margin: 0;
-
-    }
-    input {
-        max-width: 125px;
-    }
-    .cardStats {
-        margin: 4px 16px;
-    }
-    .pokemonCard {
-        min-height: 90vh;
-    }
-    .profile-main-loader{
-        left: 38% !important;
-        position: fixed !important;
-        top: 40% !important;
-        width: 80px !important;
-        z-index: 9000 !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .profile-main-loader .loader {
-        position: relative;
-        margin: 0px 0px;
-        width: 120px !important;
-        height:120px !important;;
-    }
-    .profile-main-loader .loader:before {
-        content: '';
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 100%;
-    }
-    
-    .circular-loader {
-        -webkit-animation: rotate 2s linear infinite;
-                animation: rotate 2s linear infinite;
-        height: 100%;
-        -webkit-transform-origin: center center;
-            -ms-transform-origin: center center;
-                transform-origin: center center;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: auto;
-    }
-    
-    .loader-path {
-        stroke-dasharray: 150,200;
-        stroke-dashoffset: -10;
-        -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-                animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-        stroke-linecap: round;
-    }
-    
-    .loader {
-        background-color: rgb(98, 85, 85); !important
-        width: 250px !important;;
-        height: 200px !important;;
-    }
-    .loader p {
-        color: red;
-        font-size:large;
-        font-weight: bold;
-        background-color: rgb(98, 85, 85); !important;
-    }
-}
-
-/*Loading circle */
-
-
-.profile-main-loader{
-    left: 40% !important;
+  .progress {
+    width: 150px;
+    margin: 0;
+  }
+  input {
+    max-width: 125px;
+  }
+  .cardStats {
+    margin: 4px 16px;
+  }
+  .pokemonCard {
+    min-height: 90vh;
+  }
+  .profile-main-loader {
+    left: 38% !important;
     position: fixed !important;
     top: 40% !important;
-    width: 340px;
+    width: 80px !important;
     z-index: 9000 !important;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.profile-main-loader .loader {
+  .profile-main-loader .loader {
     position: relative;
     margin: 0px 0px;
-    width: 400px;
-    height: 400px;
-}
-.profile-main-loader .loader:before {
-    content: '';
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .profile-main-loader .loader:before {
+    content: "";
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 100%;
-}
+  }
 
-.circular-loader {
+  .circular-loader {
     -webkit-animation: rotate 2s linear infinite;
-            animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
     height: 100%;
     -webkit-transform-origin: center center;
-        -ms-transform-origin: center center;
-            transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     margin: auto;
+  }
+
+  .loader-path {
+    stroke-dasharray: 150, 200;
+    stroke-dashoffset: -10;
+    -webkit-animation: dash 1.5s ease-in-out infinite,
+      color 6s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+  }
+
+  .loader {
+    background-color: rgb(98, 85, 85) !important;
+    width: 250px !important;
+    height: 200px !important;
+  }
+  .loader p {
+    color: red;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(98, 85, 85) !important;
+  }
+}
+
+/*Loading circle */
+
+.profile-main-loader {
+  left: 40% !important;
+  position: fixed !important;
+  top: 40% !important;
+  width: 320px;
+  z-index: 9000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-main-loader .loader {
+  position: relative;
+  margin: 0px 0px;
+  width: 320px;
+  height: 320px;
+}
+.profile-main-loader .loader:before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100%;
+}
+
+.circular-loader {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
 }
 
 .loader-path {
-    stroke-dasharray: 150,200;
-    stroke-dashoffset: -10;
-    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-            animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-    stroke-linecap: round;
+  stroke-dasharray: 150, 200;
+  stroke-dashoffset: -10;
+  -webkit-animation: dash 1.5s ease-in-out infinite,
+    color 6s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
 }
 
 .loader {
-    background-color: rgb(98, 85, 85); !important
-    width: 350px;
-    height: 350px;
+  background-color: rgb(98, 85, 85) !important;
+  width: 350px;
+  height: 350px;
 }
 .loader p {
-    color: red;
-    font-size:large;
-    font-weight: bold;
-    background-color: rgb(98, 85, 85); !important;
+  color: red;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(98, 85, 85) !important;
 }
 
 @-webkit-keyframes rotate {
-    100% {
+  100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    }
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes rotate {
-    100% {
+  100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    }
+    transform: rotate(360deg);
+  }
 }
 @-webkit-keyframes dash {
-    0% {
-    stroke-dasharray: 1,200;
+  0% {
+    stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
-    }
-    50% {
-    stroke-dasharray: 89,200;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
     stroke-dashoffset: -35;
-    }
-    100% {
-    stroke-dasharray: 89,200;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
     stroke-dashoffset: -124;
-    }
+  }
 }
 @keyframes dash {
-    0% {
-    stroke-dasharray: 1,200;
+  0% {
+    stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
-    }
-    50% {
-    stroke-dasharray: 89,200;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
     stroke-dashoffset: -35;
-    }
-    100% {
-    stroke-dasharray: 89,200;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
     stroke-dashoffset: -124;
-    }
+  }
 }
 @-webkit-keyframes color {
-    0% {
+  0% {
     stroke: #70c542;
-    }
-    40% {
+  }
+  40% {
     stroke: #70c542;
-    }
-    66% {
+  }
+  66% {
     stroke: #70c542;
-    }
-    80%, 90% {
+  }
+  80%,
+  90% {
     stroke: #70c542;
-    }  
+  }
 }
 @keyframes color {
-    0% {
+  0% {
     stroke: #70c542;
-    }
-    40% {
+  }
+  40% {
     stroke: #70c542;
-    }
-    66% {
+  }
+  66% {
     stroke: #70c542;
-    }
-    80%, 90% {
+  }
+  80%,
+  90% {
     stroke: #70c542;
-    }
+  }
 }
